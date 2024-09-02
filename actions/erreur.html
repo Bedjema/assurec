@@ -1,0 +1,22 @@
+<?php
+$DIR = "../";
+/* Sessions controles */
+require($DIR.'actions/sessions-controle.html');
+/* check confirmation session */
+if(!isset($_SESSION['ERROR'])) {header("Location: ../index.html"); die();}
+$code = !empty($_SESSION['CODE']) ? $_SESSION['CODE'] : '';
+$notice_pg = true;
+
+/* css des pages */
+require($DIR.'parametre/css.html');
+/* configuration des pages */
+require($DIR.'parametre/settings.html');
+/* entête de la page */
+include($DIR.'include/header.html');
+/* Le contenu de l'en-tête - vide */
+include($DIR.'include/none-area-content.html');
+/* contenu du page de confimation */
+include($DIR.'include/erreur-content.html');
+/* bas de page */
+include($DIR.'include/footer-confirmation.html');
+?>
