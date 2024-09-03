@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="./template/css/responsive.css">
 	<style>
 		.img-bg {
-			background-image: url(./template/img/bg/prevoyage/header-bg-1.jpg);
+			background-image: url(./template/img/bg/prevoyage/header-bg-1.webp);
 		}
 	</style>
 
@@ -58,6 +58,10 @@
 	</head>
 
 <body>
+<div id="label-plat" class="form-area-wrapper mfp-hide">
+		<a class="popup-label-plat-dismiss" href="#"><img src="./template/img/icons/close.png" width="18" height="18" /></a>
+		<img src="./template/img/label.webp" loading="lazy" alt="label infocea" title="label infocea">
+	</div>
 		<div class="gdpr-bar" cookies-popup>
 			<div class="gdpr-bar-description">
 				<p class="gdpr-bar-p">En cliquant sur « Accepter tous les cookies », vous acceptez le stockage de cookies sur votre appareil<span class="bc-lines"></span> pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de marketing.</p>
@@ -118,7 +122,7 @@
 					<div class="justify-content-start d-flex">
 						<ul class="social">
 							<li><a title="Linkedin" rel="nofollow" target="_blank" href="https://www.linkedin.com/company/assur-eco/"><img src="./template/img/icons/linkedin_icon_w.png" alt="linkedin" width="21" height="22" /></a></li>
-							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.html?id=100064562273876"><img src="./template/img/icons/facebook_icon_w.png" alt="Facebook" width="21" height="22" /></a></li>
+							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.php?id=100064562273876"><img src="./template/img/icons/facebook_icon_w.png" alt="Facebook" width="21" height="22" /></a></li>
 							<li><a title="Instagram" rel="nofollow" target="_blank" href="https://www.instagram.com/assurecoassurances/"><img src="./template/img/icons/instagram_icon_w.png" alt="Instagram" width="21" height="23" /></a></li>
 						</ul>
 					</div>
@@ -173,102 +177,383 @@
 					</div>
 
 						</div>
-	</header><section dir='ltr' class="header-area header-bg img-bg style-section filter-bg mb-4" itemprop="isPartOf" itemscope itemtype="http://schema.org/WebSite">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6 p-0" itemscope itemtype="http://schema.org/Organization">
-                    <div class="form-area-wrapper pl-md-5" id="devis_form" dir="ltr">
-                    <h3 class="title">Anticiper les aléas du quotidien et demandez votre devis maintenant </h3>
-						<div id="form-dem-con">
-						<div id="error-note-dem" class="alert alert-danger"></div>
-						<div id="success-note-dem" class="alert alert-success"></div>
-						</div>
-                        <form action="./actions/confirmation.html" class="asur-form sec-margin" method="GET">
-                        <input type="hidden" name="TypeForm" id="TypeForm" value="3" />
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group in-dem">
-                                        <input type="text" class="form-control" placeholder="Nom" id="Nom" name="Nom" data-msg-required="- Veuillez saisir votre nom car il est obligatoire." required />
+	</header><section dir='ltr' class="header-area header-bg img-bg style-section filter-bg mb-4"
+    itemprop="isPartOf" itemscope itemtype="http://schema.org/WebSite">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 p-0">
+            <div class="nav-left-form">
+                    <ul>
+                    <li class="button-f">
+                            <a class="boxed-btn active" href="#">Demande de devis</a>
+                        </li>
+                        <li class="button-f">
+                            <a class="boxed-btn" href="./rappel-gratuit.html">Rappel gratuit</a>
+                        </li>
+                        <li class="button-f">
+                        <a class="boxed-btn" href="./assurance-auto-temporaire-souscription-en-ligne.html">Assurance auto temporaire <br>souscription en ligne</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0" itemscope itemtype="http://schema.org/Organization">
+                <div class="form-area-wrapper pl-md-5" id="devis_form" dir="ltr">
+                <h3 class="title">Anticiper les aléas du quotidien et demandez votre devis maintenant </h3>
+                    <div id="form-dem-con">
+                        <div id="error-note-dem" class="alert alert-danger"></div>
+                        <div id="success-note-dem" class="alert alert-success"></div>
+                    </div>
+
+                    <form action="./actions/confirmation.html"
+                        class="asur-form sec-margin" method="GET" novalidate="novalidate">
+                        <input type="hidden" name="TypeForm" id="TypeForm" value="4" />
+
+                        <div class="row">
+                            <div class="form-group col-auto text-3-4">
+                                <label for="Civilite" style="color: #3b3838 !important;">Civilité : </label>
+                            </div>
+
+                            <div class="form-group col-auto">
+                                <div class="form-check form-check-inline">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="cvl1" name="Civilite" class="custom-control-input"
+                                            data-msg-required="- Veuillez choisir votre civilité car il est obligatoire"
+                                            value="MR" checked>
+                                        <label style="color: #3b3838 !important;" class="custom-control-label ml-1"
+                                            for="cvl1">Monsieur</label>
+                                    </div>
+
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="cvl2" name="Civilite" class="custom-control-input"
+                                            data-msg-required="- Veuillez choisir votre civilité car il est obligatoire"
+                                            value="MME">
+                                        <label style="color: #3b3838 !important;" class="custom-control-label ml-1"
+                                            for="cvl2">Madame</label>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group in-dem">
-                                        <input type="text" class="form-control" placeholder="Prénom" id="Prenom" name="Prenom" data-msg-required="- Veuillez saisir votre prénom car il est obligatoire." required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group in-dem">
+                                    <input type="text" value="" maxlength="30"
+                                        data-msg-required="Le nom est requis"
+                                        class="form-control" placeholder="Nom" id="Nom" name="Nom" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group in-dem">
+                                    <input type="text" value="" maxlength="30" class="form-control"
+                                        data-msg-required="Le prénom est requis"
+                                        id="Prenom" placeholder="Prénom" name="Prenom" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group in-dem">
+                                    <input type="text" value="" maxlength="10"
+                                        data-msg-required="Le numéro de téléphone est requis"
+                                        data-msg-regex="- Veuillez saisir votre numéro de téléphone en format valide"
+                                        class="form-control num-tel" placeholder="Numéro de téléphone" id="Telephone" name="Telephone"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group in-dem">
+                                    <input type="text" value=""
+                                        data-msg-regex="- Veuillez saisir votre code postal en format valide"
+                                        data-msg-minlength="- Veuillez saisir au moins 5 chiffres" maxlength="5"
+                                        class="form-control code-postal" placeholder="Code postal" name="CodePostal" id="CodePostal"
+                                        placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" value="" maxlength="100" class="form-control" id="Adresse"
+                                        data-msg-required="- Veuillez saisir votre adresse car il est obligatoire"
+                                        name="Adresse" placeholder="Adresse postale" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                            <div class="form-group in-dem">
+                                    <input type="text" value="" data-msg-required="L’adresse mail est requise"
+                                        data-msg-regex="- Veuillez saisir votre e-mail en format valide" maxlength="100"
+                                        class="form-control email" placeholder="Adresse mail" id="Email" name="Email" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group in-dem">
+                                    <input type="text" data-plugin-datepicker="" value="" maxlength="10"
+                                        data-msg-required="La date de naissance est requise"
+                                        class="form-control form_date_mask input-datepick" id="DateNaiss"
+                                        name="DateNaiss" placeholder="Date de naissance" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group in-dem">
+                                    <div class="custom-select-1">
+                                        <select name="CatSociale" class="form-select form-control py-2"
+                                            data-msg-required="La catégorie sociale est requise"
+                                            required>
+                                            <option value="">Catégorie sociale</option>
+                                            <option value="1">Sécurité sociale</option>
+                                            <option value="2">TNS</option>
+                                            <option value="3">Exploitant Agricole</option>
+                                            <option value="4">Alsace Moselle</option>
+                                            <option value="5">Salarié Agricole</option>
+                                        </select>
                                     </div>
                                 </div>
-								<div class="col-lg-6">
-                                    <div class="form-group in-dem">
-                                        <input type="text" placeholder="Numéro de téléphone" data-msg-regex="- Le format du numéro de téléphone est incorrect" class="form-control num-tel" id="Telephone" name="Telephone" maxlength="10" data-msg-required="- Veuillez saisir votre numéro de téléphone car il est obligatoire." required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            
+                            <div class="col-lg-12">
+                                <div class="form-group in-dem">
+                                    <div class="custom-select-1">
+                                        <select name="PostGarantir"
+                                            data-msg-required="Vos besoins sont requis"
+                                            class="form-select form-control py-2" required>
+                                            <option value="">Vos besoins</option>
+                                            <option value="Médecine - Consultations">Médecines - Consultations</option>
+                                            <option value="Dentaire">Dentaire</option>
+                                            <option value="Optique">Optique</option>
+                                            <option value="Hospitalisation">Hospitalisation</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-7 text-3-4 mb-0">
+                                <label for="Conjoint" style="color: #3b3838 !important;">Souhaitez-vous assurer votre
+                                    conjoint ? </label>
+                            </div>
+                            <div class="form-group col-5 mb-0">
+                                <div class="form-group col-auto">
+                                    <div class="form-check form-check-inline">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="conjo1" name="Conjoint" class="custom-control-input"
+                                                data-msg-required="- Veuillez préciser si vous souhaitez assurer votre conjoint"
+                                                onclick="sh_conj();" value="Oui">
+                                            <label style="color: #3b3838 !important;" class="custom-control-label ml-1"
+                                                for="conjo1">Oui</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="conjo2" name="Conjoint" class="custom-control-input"
+                                                data-msg-required="- Veuillez préciser si vous souhaitez assurer votre conjoint"
+                                                onclick="hd_conj();" value="Non" checked>
+                                            <label style="color: #3b3838 !important;" class="custom-control-label ml-1"
+                                                for="conjo2">Non</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group in-dem">
-                                        <input type="text" placeholder="Code postal" data-msg-regex="- Le format de code postal est incorrect" class="form-control code-postal" id="CodePostal" name="CodePostal" maxlength="5" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" value="" maxlength="10" placeholder="Date de naissance"
+                                        data-msg-required="La date de naissance est requise"
+                                        style="display:none;"
+                                        class="form-control conjoint-elm form_date_mask input-datepick"
+                                        id="DateNaissCojoint" name="DateNaissCojoint" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <div class="custom-select-1 conjoint-elm" style="display:none;">
+                                        <select name="CatSocialeConjoint"
+                                            data-msg-required="La catégorie sociale est requise"
+                                            class="form-select form-control py-2" required>
+                                            <option value="">Catégorie sociale</option>
+                                            <option value="1">Sécurité sociale</option>
+                                            <option value="2">TNS</option>
+                                            <option value="3">Exploitant Agricole</option>
+                                            <option value="4">Alsace Moselle</option>
+                                            <option value="5">Salarié Agricole</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-7 text-3-4 mb-0">
+                                <label for="Civilite" style="color: #3b3838 !important;">Souhaitez-vous assurer vos
+                                    enfants ? </label>
+                            </div>
+                            <div class="form-group col-5 mb-0">
+
+                                <div class="form-group col-auto">
+                                    <div class="form-check form-check-inline">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="isenf1" name="Enfants" class="custom-control-input"
+                                                data-msg-required="- Veuillez préciser si vous souhaitez assurer vos enfants"
+                                                onclick="sh_enft();" value="Oui">
+                                            <label style="color: #3b3838 !important;" class="custom-control-label ml-1"
+                                                for="isenf1">Oui</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="isenf2" name="Enfants" class="custom-control-input"
+                                                data-msg-required="- Veuillez préciser si vous souhaitez assurer vos enfants"
+                                                onclick="hd_enft();" value="Non" checked>
+                                            <label style="color: #3b3838 !important;" class="custom-control-label ml-1"
+                                                for="isenf2">Non</label>
+                                        </div>
                                     </div>
                                 </div>
-								<div class="col-lg-12">
-                                    <div class="form-group in-dem">
-										<input type="text" placeholder="Adresse mail" data-msg-regex="- Le format de l'adresse mail est incorrect" id="Email" name="Email" class="form-control email" data-msg-required="- Veuillez saisir votre adresse email car il est obligatoire." required  />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <div class="custom-select-1 enf-elm" style="display:none;">
+                                        <select name="NbrEnfants"
+                                            data-msg-required="Le nombre Enfants à charge est requis"
+                                            class="form-select form-control py-2" required>
+                                            <option value="">Nombre Enfants à charge</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
                                     </div>
                                 </div>
-								<div class="col-lg-12">
-								<div class="custom-control custom-checkbox my-1 mr-sm-2 mb-3">
-								<input type="checkbox" class="custom-control-input" id="acc_offers" name="Notification" value="1">
-								<label class="custom-control-label acc_offers" for="acc_offers">J’accepte de recevoir les offres commerciales personnalisées par ASSUR’ECO.</label>
-								</div>
-								</div>
-                                <div class="mb-3 mr-auto ml-auto">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2 mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="acc_offers"
+                                        name="Notification" value="1">
+                                    <label class="custom-control-label acc_offers" for="acc_offers">J’accepte de
+                                        recevoir
+                                        les offres commerciales personnalisées par ASSUR’ECO.</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 mr-auto ml-auto">
                                 <center>
                                     <div class="g-recaptcha" id="g-captcha-f-1"></div>
-                                    <input disabled="disabled" class="g-recaptcha-checker" data-msg-required="- Veuillez confirmer que vous n'êtes pas un robot"
+                                    <input disabled="disabled" class="g-recaptcha-checker" data-msg-required="Veuillez confirmer que vous n'êtes pas un robot"
                                         name="g-recaptcha-checker" type="text"
                                         style="opacity: 0; position: absolute; top: 0; left: 0; height: 1px; width: 1px;" required />
                                 </center>
                                 </div>
-								<div class="col-lg-12">
+
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <input type="hidden" name="ad_keyword" value="" />
-								<input type="hidden" name="visitor_session" value="" />
-								<input type="hidden" name="code_page" value="3" />
-                                <input type="hidden" name="CommentaireTxt" value="Prévoyance" />
-								</div>
-                                <div class="col-lg-12" align="center">
-                                    <button class="btn btn-dark w-100" name="form_submit_dem" id="form_submit_dem_btn" type="submit">OBTENIR MON TARIF</button>
-                                </div>
-								<div class="col-lg-12">
-								<p class="small-form-txt">
-								Les données personnelles recueillies sont nécessaires à l’appréciation et au traitement de votre demande d’assurance. Le responsable du traitement est ASSUR’ECO basé à 12 AV MAURICE THOREZ IVRY-SUR-SEINE. 
-								Vous autorisez le responsable du traitement à communiquer vos réponses ainsi que les données vous concernant à ses intermédiaires d'assurances, réassureurs, et aux différents organismes et partenaires en lien avec ASSUR’ECO.
-								Vos échanges de courriers, télécopies, formulaires, courriels et conversations téléphoniques avec notre société font l’objet de traitements informatiques par notre société pour les besoins de l’étude, de la proposition et de la souscription de votre contrat d’assurance,
-								ainsi que la gestion des réclamations, la lutte contre la fraude, la mesure et l’amélioration de notre qualité de service, et la lutte contre le blanchiment de capitaux et le financement du terrorisme. Nous conservons vos données personnelles tout au long de la vie de votre contrat. 
-								Une fois ce dernier fermé, elles sont conservées pendant le délai de prescription. Vous gardez bien sûr tout loisir d’accéder à vos données personnelles, de demander leur rectification, portabilité, effacement et de limiter leur utilisation ou vous y opposer. 
-								Vous pouvez également prendre contact avec notre Délégué à la Protection des Données pour toute information ou contestation, dans le cadre de l’application du Règlement Général sur la Protection des Données (RGPD). 
-								Pour cela, il vous suffit de nous écrire par mail à <a class="mail_rl" href="mailto:contact@assureco.fr">contact@assureco.fr</a>, ou par courrier à : ASSUR’ECO, 12 AV MAURICE THOREZ IVRY-SUR-SEINE. Pour plus de détail rendez-vous sur la page : <a class="bottom-txt-link" href="./Protection-des-donnees-personnelles.html" title="Protection des données personnelles">Protection des données personnelles</a>
-								</p>
-								</div>
+                                <input type="hidden" name="visitor_session"
+                                    value="" />
+                                <input type="hidden" name="code_page" value="3" />
                             </div>
-                        </form>
-                    </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12" align="center">
+                                <button class="btn btn-dark w-100" name="form_submit_dem" id="form_submit_dem_btn"
+                                    type="submit">OBTENIR MON TARIF</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="small-form-txt">
+                                    Les données personnelles recueillies sont nécessaires à l’appréciation et au
+                                    traitement
+                                    de votre demande d’assurance. Le responsable du traitement est ASSUR’ECO basé à 12
+                                    AV
+                                    MAURICE THOREZ IVRY-SUR-SEINE.
+                                    Vous autorisez le responsable du traitement à communiquer vos réponses ainsi que les
+                                    données vous concernant à ses intermédiaires d'assurances, réassureurs, et aux
+                                    différents organismes et partenaires en lien avec ASSUR’ECO.
+                                    Vos échanges de courriers, télécopies, formulaires, courriels et conversations
+                                    téléphoniques avec notre société font l’objet de traitements informatiques par notre
+                                    société pour les besoins de l’étude, de la proposition et de la souscription de
+                                    votre
+                                    contrat d’assurance,
+                                    ainsi que la gestion des réclamations, la lutte contre la fraude, la mesure et
+                                    l’amélioration de notre qualité de service, et la lutte contre le blanchiment de
+                                    capitaux et le financement du terrorisme. Nous conservons vos données personnelles
+                                    tout
+                                    au long de la vie de votre contrat.
+                                    Une fois ce dernier fermé, elles sont conservées pendant le délai de prescription.
+                                    Vous
+                                    gardez bien sûr tout loisir d’accéder à vos données personnelles, de demander leur
+                                    rectification, portabilité, effacement et de limiter leur utilisation ou vous y
+                                    opposer.
+                                    Vous pouvez également prendre contact avec notre Délégué à la Protection des Données
+                                    pour toute information ou contestation, dans le cadre de l’application du Règlement
+                                    Général sur la Protection des Données (RGPD).
+                                    Pour cela, il vous suffit de nous écrire par mail à <a class="mail_rl"
+                                        href="mailto:contact@assureco.fr">contact@assureco.fr</a>, ou par courrier à :
+                                    ASSUR’ECO, 12 AV MAURICE THOREZ IVRY-SUR-SEINE. Pour plus de détail rendez-vous sur
+                                    la
+                                    page : <a class="bottom-txt-link"
+                                        href="./Protection-des-donnees-personnelles.html"
+                                        title="Protection des données personnelles">Protection des données
+                                        personnelles</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 </section><section class="m-0 pt-4 mid4-bg">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="m-b-lg col-md-11">
+            <div class="m-b-lg col-md-12">
 
                 <div class="row">
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                                 <a href="./index.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="template/img/icons/ic-1.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="template/img/icons/ic-1.webp" class="img-fluid" alt="" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance auto</h4>
+                                        <h4 class="mb-2">Assurance <br> auto</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -277,15 +562,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./sante.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-2.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-2.webp" class="img-fluid" alt="Assurance santé" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance santé</h4>
+                                        <h4 class="mb-2">Assurance <br>santé</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -294,15 +579,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./habitation.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-3.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-3.webp" class="img-fluid" alt="Assurance habitation" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance habitation</h4>
+                                        <h4 class="mb-2">Assurance <br>habitation</h4>
                                     </div>
                                 </div>
                             </a>
@@ -311,15 +596,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./pro.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-4.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-4.webp" class="img-fluid" alt="Assurance professionnelle" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance professionnelle</h4>
+                                        <h4 class="mb-2">Assurance <br>professionnelle</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -328,15 +613,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./moto.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-5.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-5.webp" class="img-fluid" alt="Assurance moto" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance moto</h4>
+                                        <h4 class="mb-2">Assurance <br>moto</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -345,15 +630,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus active mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                                 <a href="./prevoyance.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-6.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-6.webp" class="img-fluid" alt="Assurance prévoyance" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance prévoyance</h4>
+                                        <h4 class="mb-2">Assurance <br>prévoyance</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -362,15 +647,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./assurance-auto-temporaire-souscription-en-ligne.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-7.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-7.webp" class="img-fluid" alt="Assurance auto temporaire" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance auto temporaire</h4>
+                                        <h4 class="mb-2">Assurance <br>auto temporaire</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -399,7 +684,7 @@
 </div>
 <section class="my-4" style="background-color: #81e1d7;">
     <div class="row justify-content-center">
-        <div class="m-b-lg col-md-11" style="position: relative;bottom: 30px;">
+        <div class="m-b-lg col-md-12" style="position: relative;bottom: 30px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6">
@@ -408,7 +693,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f3.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f3.webp" class="img-fluid w-100" alt="De nos clients expriment leur satisfaction"
                                             height="210px">
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
@@ -430,7 +715,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f2.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f2.webp" class="img-fluid w-100" alt="De nos clients sont satisfaits"
                                             height="210px">
                                     </div>
                                     <div class="feature-box-info">
@@ -454,7 +739,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f1.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f1.webp" class="img-fluid w-100" alt="Partenaires de confiance avec qui on collaborent"
                                             height="210px">
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
@@ -488,11 +773,7 @@
             </div>
         </div>
 	</div>
-</section><div id="label-plat" class="form-area-wrapper mfp-hide">
-		<a class="popup-label-plat-dismiss" href="#"><img src="./template/img/icons/close.png" width="18" height="18" /></a>
-		<img src="./template/img/label.webp" loading="lazy" alt="label infocea" title="label infocea">
-	</div>
-<footer dir='ltr' class="footer-area style-footer bg-footer filter-bg"
+</section><footer dir='ltr' class="footer-area style-footer bg-footer filter-bg"
     itemprop="hasPart" itemscope itemtype="http://schema.org/WPFooter">
     <div class="footer-top">
         <div class="container">
@@ -504,7 +785,7 @@
                     <div class="footer-widget nav_menus_widget">
                         <ul class="social">
                             <li><a title="Facebook" rel="nofollow" target="_blank"
-                                    href="https://www.facebook.com/profile.html?id=100064562273876"><img
+                                    href="https://www.facebook.com/profile.php?id=100064562273876"><img
                                         src="./template/img/icons/facebook_icon.png"
                                         alt="Facebook" width="30" height="30" /></a></li>
                             <li><a title="Instagram" rel="nofollow" target="_blank"

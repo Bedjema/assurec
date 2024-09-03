@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="./template/css/responsive.css">
 	<style>
 		.img-bg {
-			background-image: url(./template/img/bg/sante/header-bg-1.jpg);
+			background-image: url(./template/img/bg/sante/header-bg-1.webp);
 		}
 	</style>
 
@@ -58,6 +58,10 @@
 	</head>
 
 <body>
+<div id="label-plat" class="form-area-wrapper mfp-hide">
+		<a class="popup-label-plat-dismiss" href="#"><img src="./template/img/icons/close.png" width="18" height="18" /></a>
+		<img src="./template/img/label.webp" loading="lazy" alt="label infocea" title="label infocea">
+	</div>
 		<div class="gdpr-bar" cookies-popup>
 			<div class="gdpr-bar-description">
 				<p class="gdpr-bar-p">En cliquant sur « Accepter tous les cookies », vous acceptez le stockage de cookies sur votre appareil<span class="bc-lines"></span> pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de marketing.</p>
@@ -118,7 +122,7 @@
 					<div class="justify-content-start d-flex">
 						<ul class="social">
 							<li><a title="Linkedin" rel="nofollow" target="_blank" href="https://www.linkedin.com/company/assur-eco/"><img src="./template/img/icons/linkedin_icon_w.png" alt="linkedin" width="21" height="22" /></a></li>
-							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.html?id=100064562273876"><img src="./template/img/icons/facebook_icon_w.png" alt="Facebook" width="21" height="22" /></a></li>
+							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.php?id=100064562273876"><img src="./template/img/icons/facebook_icon_w.png" alt="Facebook" width="21" height="22" /></a></li>
 							<li><a title="Instagram" rel="nofollow" target="_blank" href="https://www.instagram.com/assurecoassurances/"><img src="./template/img/icons/instagram_icon_w.png" alt="Instagram" width="21" height="23" /></a></li>
 						</ul>
 					</div>
@@ -181,7 +185,7 @@
             <div class="nav-left-form">
                     <ul>
                     <li class="button-f">
-                            <a class="boxed-btn dem_devis active" href="#">Demande de devis</a>
+                            <a class="boxed-btn active" href="#">Demande de devis</a>
                         </li>
                         <li class="button-f">
                             <a class="boxed-btn" href="./rappel-gratuit.html">Rappel gratuit</a>
@@ -236,14 +240,14 @@
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
                                     <input type="text" value="" maxlength="30"
-                                        data-msg-required="- Veuillez saisir votre nom car il est obligatoire"
+                                        data-msg-required="Le nom est requis"
                                         class="form-control" placeholder="Nom" id="Nom" name="Nom" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
                                     <input type="text" value="" maxlength="30" class="form-control"
-                                        data-msg-required="- Veuillez saisir votre prénom car il est obligatoire"
+                                        data-msg-required="Le prénom est requis"
                                         id="Prenom" placeholder="Prénom" name="Prenom" required>
                                 </div>
                             </div>
@@ -253,7 +257,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
                                     <input type="text" value="" maxlength="10"
-                                        data-msg-required="- Veuillez saisir votre téléphone car il est obligatoire"
+                                        data-msg-required="Le numéro de téléphone est requis"
                                         data-msg-regex="- Veuillez saisir votre numéro de téléphone en format valide"
                                         class="form-control num-tel" placeholder="Numéro de téléphone" id="Telephone" name="Telephone"
                                         required>
@@ -283,7 +287,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                             <div class="form-group in-dem">
-                                    <input type="text" value="" data-msg-required="- Veuillez saisir votre e-mail car il est obligatoire"
+                                    <input type="text" value="" data-msg-required="L’adresse mail est requise"
                                         data-msg-regex="- Veuillez saisir votre e-mail en format valide" maxlength="100"
                                         class="form-control email" placeholder="Adresse mail" id="Email" name="Email" required>
                                 </div>
@@ -294,7 +298,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
                                     <input type="text" data-plugin-datepicker="" value="" maxlength="10"
-                                        data-msg-required="- Veuillez saisir votre date de naissance car il est obligatoire"
+                                        data-msg-required="La date de naissance est requise"
                                         class="form-control form_date_mask input-datepick" id="DateNaiss"
                                         name="DateNaiss" placeholder="Date de naissance" required>
                                 </div>
@@ -303,7 +307,7 @@
                                 <div class="form-group in-dem">
                                     <div class="custom-select-1">
                                         <select name="CatSociale" class="form-select form-control py-2"
-                                            data-msg-required="- Veuillez séléctionner votre catégorie sociale"
+                                            data-msg-required="La catégorie sociale est requise"
                                             required>
                                             <option value="">Catégorie sociale</option>
                                             <option value="1">Sécurité sociale</option>
@@ -323,7 +327,7 @@
                                 <div class="form-group in-dem">
                                     <div class="custom-select-1">
                                         <select name="PostGarantir"
-                                            data-msg-required="- Veuillez sélectionner vos besoins car il est obligatoire"
+                                            data-msg-required="Vos besoins sont requis"
                                             class="form-select form-control py-2" required>
                                             <option value="">Vos besoins</option>
                                             <option value="Médecine - Consultations">Médecines - Consultations</option>
@@ -371,7 +375,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <input type="text" value="" maxlength="10" placeholder="Date de naissance"
-                                        data-msg-required="- Veuillez saisir la date de naissance car il est obligatoire"
+                                        data-msg-required="La date de naissance est requise"
                                         style="display:none;"
                                         class="form-control conjoint-elm form_date_mask input-datepick"
                                         id="DateNaissCojoint" name="DateNaissCojoint" required>
@@ -381,7 +385,7 @@
                                 <div class="form-group">
                                     <div class="custom-select-1 conjoint-elm" style="display:none;">
                                         <select name="CatSocialeConjoint"
-                                            data-msg-required="- Veuillez séléctionner la catégorie sociale car il est obligatoire"
+                                            data-msg-required="La catégorie sociale est requise"
                                             class="form-select form-control py-2" required>
                                             <option value="">Catégorie sociale</option>
                                             <option value="1">Sécurité sociale</option>
@@ -430,7 +434,7 @@
                                 <div class="form-group">
                                     <div class="custom-select-1 enf-elm" style="display:none;">
                                         <select name="NbrEnfants"
-                                            data-msg-required="- Veuillez séléctionner le nombre Enfants à charge"
+                                            data-msg-required="Le nombre Enfants à charge est requis"
                                             class="form-select form-control py-2" required>
                                             <option value="">Nombre Enfants à charge</option>
                                             <option value="1">1</option>
@@ -466,7 +470,7 @@
                         <div class="mb-3 mr-auto ml-auto">
                                 <center>
                                     <div class="g-recaptcha" id="g-captcha-f-1"></div>
-                                    <input disabled="disabled" class="g-recaptcha-checker" data-msg-required="- Veuillez confirmer que vous n'êtes pas un robot"
+                                    <input disabled="disabled" class="g-recaptcha-checker" data-msg-required="Veuillez confirmer que vous n'êtes pas un robot"
                                         name="g-recaptcha-checker" type="text"
                                         style="opacity: 0; position: absolute; top: 0; left: 0; height: 1px; width: 1px;" required />
                                 </center>
@@ -536,20 +540,20 @@
 </section><section class="m-0 pt-4 mid4-bg">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="m-b-lg col-md-11">
+            <div class="m-b-lg col-md-12">
 
                 <div class="row">
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                                 <a href="./index.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="template/img/icons/ic-1.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="template/img/icons/ic-1.webp" class="img-fluid" alt="" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance auto</h4>
+                                        <h4 class="mb-2">Assurance <br> auto</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -558,15 +562,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus active mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./sante.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-2.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-2.webp" class="img-fluid" alt="Assurance santé" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance santé</h4>
+                                        <h4 class="mb-2">Assurance <br>santé</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -575,15 +579,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./habitation.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-3.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-3.webp" class="img-fluid" alt="Assurance habitation" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance habitation</h4>
+                                        <h4 class="mb-2">Assurance <br>habitation</h4>
                                     </div>
                                 </div>
                             </a>
@@ -592,15 +596,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./pro.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-4.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-4.webp" class="img-fluid" alt="Assurance professionnelle" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance professionnelle</h4>
+                                        <h4 class="mb-2">Assurance <br>professionnelle</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -609,15 +613,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./moto.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-5.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-5.webp" class="img-fluid" alt="Assurance moto" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance moto</h4>
+                                        <h4 class="mb-2">Assurance <br>moto</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -626,15 +630,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                                 <a href="./prevoyance.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-6.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-6.webp" class="img-fluid" alt="Assurance prévoyance" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance prévoyance</h4>
+                                        <h4 class="mb-2">Assurance <br>prévoyance</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -643,15 +647,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./assurance-auto-temporaire-souscription-en-ligne.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-7.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-7.webp" class="img-fluid" alt="Assurance auto temporaire" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance auto temporaire</h4>
+                                        <h4 class="mb-2">Assurance <br>auto temporaire</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -680,7 +684,7 @@
 </div>
 <section class="my-4" style="background-color: #81e1d7;">
     <div class="row justify-content-center">
-        <div class="m-b-lg col-md-11" style="position: relative;bottom: 30px;">
+        <div class="m-b-lg col-md-12" style="position: relative;bottom: 30px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6">
@@ -689,7 +693,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f3.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f3.webp" class="img-fluid w-100" alt="De nos clients expriment leur satisfaction"
                                             height="210px">
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
@@ -711,7 +715,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f2.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f2.webp" class="img-fluid w-100" alt="De nos clients sont satisfaits"
                                             height="210px">
                                     </div>
                                     <div class="feature-box-info">
@@ -735,7 +739,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f1.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f1.webp" class="img-fluid w-100" alt="Partenaires de confiance avec qui on collaborent"
                                             height="210px">
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
@@ -779,7 +783,7 @@
                     </div>
 					<div class="footer-widget nav_menus_widget">
 						<ul class="social">
-							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.html?id=100064562273876"><img src="./template/img/icons/facebook_icon.png" alt="Facebook" width="30" height="30" /></a></li>
+							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.php?id=100064562273876"><img src="./template/img/icons/facebook_icon.png" alt="Facebook" width="30" height="30" /></a></li>
 							<li><a title="Instagram" rel="nofollow" target="_blank" href="https://www.instagram.com/assurecoassurances/"><img src="./template/img/icons/instagram_icon.png" alt="Instagram" width="30" height="30" /></a></li>
 							<li><a title="Linkedin" rel="nofollow" target="_blank" href="https://www.linkedin.com/company/assur-eco/"><img src="./template/img/icons/linkedin_icon.png" alt="linkedin" width="30" height="30" /></a></li>
 						</ul>

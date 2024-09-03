@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="./template/css/responsive.css">
 	<style>
 		.img-bg {
-			background-image: url(./template/img/bg/auto/header-bg-1.jpg);
+			background-image: url(./template/img/bg/auto/header-bg-1.webp);
 		}
 	</style>
 
@@ -58,6 +58,10 @@
 	</head>
 
 <body>
+<div id="label-plat" class="form-area-wrapper mfp-hide">
+		<a class="popup-label-plat-dismiss" href="#"><img src="./template/img/icons/close.png" width="18" height="18" /></a>
+		<img src="./template/img/label.webp" loading="lazy" alt="label infocea" title="label infocea">
+	</div>
 		<div class="gdpr-bar" cookies-popup>
 			<div class="gdpr-bar-description">
 				<p class="gdpr-bar-p">En cliquant sur « Accepter tous les cookies », vous acceptez le stockage de cookies sur votre appareil<span class="bc-lines"></span> pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de marketing.</p>
@@ -118,7 +122,7 @@
 					<div class="justify-content-start d-flex">
 						<ul class="social">
 							<li><a title="Linkedin" rel="nofollow" target="_blank" href="https://www.linkedin.com/company/assur-eco/"><img src="./template/img/icons/linkedin_icon_w.png" alt="linkedin" width="21" height="22" /></a></li>
-							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.html?id=100064562273876"><img src="./template/img/icons/facebook_icon_w.png" alt="Facebook" width="21" height="22" /></a></li>
+							<li><a title="Facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/profile.php?id=100064562273876"><img src="./template/img/icons/facebook_icon_w.png" alt="Facebook" width="21" height="22" /></a></li>
 							<li><a title="Instagram" rel="nofollow" target="_blank" href="https://www.instagram.com/assurecoassurances/"><img src="./template/img/icons/instagram_icon_w.png" alt="Instagram" width="21" height="23" /></a></li>
 						</ul>
 					</div>
@@ -181,7 +185,7 @@
                 <div class="nav-left-form">
                     <ul>
                         <li class="button-f">
-                            <a class="boxed-btn dem_devis active" href="#">Demande de devis</a>
+                            <a class="boxed-btn active" href="#">Demande de devis</a>
                         </li>
                         <li class="button-f">
                             <a class="boxed-btn" href="./rappel-gratuit.html">Rappel gratuit</a>
@@ -205,18 +209,18 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
-                                    <input type="text" placeholder="Nom" class="form-control" id="Nom" name="Nom" data-msg-required="- Veuillez saisir votre nom car il est obligatoire." required />
+                                    <input type="text" placeholder="Nom" class="form-control" id="Nom" name="Nom" data-msg-required="Le nom est requis" required />
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
-                                    <input type="text" placeholder="Prénom" class="form-control" id="Prenom" name="Prenom" data-msg-required="- Veuillez saisir votre prénom car il est obligatoire." required />
+                                    <input type="text" placeholder="Prénom" class="form-control" id="Prenom" name="Prenom" data-msg-required="Le prénom est requis" required />
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
                                     <input type="text" placeholder="Numéro de téléphone" data-msg-regex="- Le format du numéro de téléphone est incorrect" class="form-control num-tel" id="Telephone" name="Telephone"
-                                        maxlength="10" data-msg-required="- Veuillez saisir votre numéro de téléphone car il est obligatoire." required />
+                                        maxlength="10" data-msg-required="Le numéro de téléphone est requis" required />
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -227,18 +231,18 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group in-dem">
-                                    <input type="text" placeholder="Adresse mail" data-msg-regex="- Le format de l'adresse mail est incorrect" id="Email" name="Email" class="form-control email" data-msg-required="- Veuillez saisir votre adresse email car il est obligatoire." required />
+                                    <input type="text" placeholder="Adresse mail" data-msg-regex="- Le format de l'adresse mail est incorrect" id="Email" name="Email" class="form-control email" data-msg-required="L’adresse mail est requise" required />
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
-                                    <input type="text" placeholder="Marque de voiture" class="form-control" id="Marque"  name="Marque" data-msg-required="- Veuillez saisir votre marque de voiture car il est obligatoire."
+                                    <input type="text" placeholder="Marque de voiture" class="form-control" id="Marque"  name="Marque" data-msg-required="La marque de voiture est requise"
                                         required />
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group in-dem">
-                                    <input type="text" placeholder="Modèle de voiture" class="form-control" id="ModelelTxt" name="ModelelTxt" data-msg-required="- Veuillez saisir votre modèle de voiture car il est obligatoire."
+                                    <input type="text" placeholder="Modèle de voiture" class="form-control" id="ModelelTxt" name="ModelelTxt" data-msg-required="Le modèle de voiture est requis"
                                         required />
                                 </div>
                             </div>
@@ -256,7 +260,7 @@
                            <div class="mb-3 mr-auto ml-auto">
                                 <center>
                                     <div class="g-recaptcha" id="g-captcha-f-1"></div>
-                                    <input disabled="disabled" class="g-recaptcha-checker" data-msg-required="- Veuillez confirmer que vous n'êtes pas un robot"
+                                    <input disabled="disabled" class="g-recaptcha-checker" data-msg-required="Veuillez confirmer que vous n'êtes pas un robot"
                                         name="g-recaptcha-checker" type="text"
                                         style="opacity: 0; position: absolute; top: 0; left: 0; height: 1px; width: 1px;" required />
                                 </center>
@@ -314,20 +318,20 @@
 </section><section class="m-0 pt-4 mid4-bg">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="m-b-lg col-md-11">
+            <div class="m-b-lg col-md-12">
 
                 <div class="row">
                     <div class="col">
                         <div class="card box-cus active mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                                 <a href="./index.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="template/img/icons/ic-1.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="template/img/icons/ic-1.webp" class="img-fluid" alt="" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance auto</h4>
+                                        <h4 class="mb-2">Assurance <br> auto</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -336,15 +340,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./sante.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-2.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-2.webp" class="img-fluid" alt="Assurance santé" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance santé</h4>
+                                        <h4 class="mb-2">Assurance <br>santé</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -353,15 +357,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./habitation.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-3.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-3.webp" class="img-fluid" alt="Assurance habitation" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance habitation</h4>
+                                        <h4 class="mb-2">Assurance <br>habitation</h4>
                                     </div>
                                 </div>
                             </a>
@@ -370,15 +374,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./pro.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-4.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-4.webp" class="img-fluid" alt="Assurance professionnelle" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance professionnelle</h4>
+                                        <h4 class="mb-2">Assurance <br>professionnelle</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -387,15 +391,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./moto.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-5.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-5.webp" class="img-fluid" alt="Assurance moto" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance moto</h4>
+                                        <h4 class="mb-2">Assurance <br>moto</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -404,15 +408,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                                 <a href="./prevoyance.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-6.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-6.webp" class="img-fluid" alt="Assurance prévoyance" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance prévoyance</h4>
+                                        <h4 class="mb-2">Assurance <br>prévoyance</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -421,15 +425,15 @@
                     </div>
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
-                            <div class="card-body py-0 px-2" style="min-height: 165px;">
+                            <div class="card-body py-0 px-2" style="min-height: 133px;">
                             <a href="./assurance-auto-temporaire-souscription-en-ligne.html">
                                 <div
-                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-3">
-                                    <div class="feature-box-icon border-radius-2 mb-2 w-auto h-auto pt-3 pb-0 text-5">
-                                        <img src="./template/img/icons/ic-7.png" class="img-fluid" alt="" width="60px">
+                                    class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
+                                    <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
+                                        <img src="./template/img/icons/ic-7.webp" class="img-fluid" alt="Assurance auto temporaire" height="60px" width="60px">
                                     </div>
                                     <div class="feature-box-info p-0 mt-2">
-                                        <h4 class="mb-2">Assurance auto temporaire</h4>
+                                        <h4 class="mb-2">Assurance <br>auto temporaire</h4>
                                     </div>
                                 </div>
                                 </a>
@@ -458,7 +462,7 @@
 </div>
 <section class="my-4" style="background-color: #81e1d7;">
     <div class="row justify-content-center">
-        <div class="m-b-lg col-md-11" style="position: relative;bottom: 30px;">
+        <div class="m-b-lg col-md-12" style="position: relative;bottom: 30px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6">
@@ -467,7 +471,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f3.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f3.webp" class="img-fluid w-100" alt="De nos clients expriment leur satisfaction"
                                             height="210px">
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
@@ -489,7 +493,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f2.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f2.webp" class="img-fluid w-100" alt="De nos clients sont satisfaits"
                                             height="210px">
                                     </div>
                                     <div class="feature-box-info">
@@ -513,7 +517,7 @@
 
                                 <div class="feature-box feature-box-primary text-center">
                                     <div class="feature-box-icon border-radius-2 mb-4 w-auto h-auto pb-0 text-5">
-                                        <img src="./template/img/bg/bg-f1.jpg" class="img-fluid w-100" alt=""
+                                        <img src="./template/img/bg/bg-f1.webp" class="img-fluid w-100" alt="Partenaires de confiance avec qui on collaborent"
                                             height="210px">
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
@@ -547,11 +551,7 @@
             </div>
         </div>
 	</div>
-</section><div id="label-plat" class="form-area-wrapper mfp-hide">
-		<a class="popup-label-plat-dismiss" href="#"><img src="./template/img/icons/close.png" width="18" height="18" /></a>
-		<img src="./template/img/label.webp" loading="lazy" alt="label infocea" title="label infocea">
-	</div>
-<footer dir='ltr' class="footer-area style-footer bg-footer filter-bg"
+</section><footer dir='ltr' class="footer-area style-footer bg-footer filter-bg"
     itemprop="hasPart" itemscope itemtype="http://schema.org/WPFooter">
     <div class="footer-top">
         <div class="container">
@@ -563,7 +563,7 @@
                     <div class="footer-widget nav_menus_widget">
                         <ul class="social">
                             <li><a title="Facebook" rel="nofollow" target="_blank"
-                                    href="https://www.facebook.com/profile.html?id=100064562273876"><img
+                                    href="https://www.facebook.com/profile.php?id=100064562273876"><img
                                         src="./template/img/icons/facebook_icon.png"
                                         alt="Facebook" width="30" height="30" /></a></li>
                             <li><a title="Instagram" rel="nofollow" target="_blank"
