@@ -11,11 +11,11 @@
 	<meta content="ASSUR'ECO" name="title">
 	<meta content='' name='keywords' />
 	<meta content='' name='description' />
-	<link href='http://localhost/4.Sites/assur-eco.com/index.html' rel='canonical' />
+	<link href='http://localhost/4.Sites/assur-eco.com/index.php' rel='canonical' />
 
 	<!-- open graph tags -->
 	<meta content='./template/img/logo.png' property='og:image' />
-	<meta content='http://localhost/4.Sites/assur-eco.com/index.html' property='og:url' />
+	<meta content='http://localhost/4.Sites/assur-eco.com/index.php' property='og:url' />
 	<meta content='ASSUR'ECO' property='og:title' />
 	<meta content='' property='og:description' />
 
@@ -58,10 +58,6 @@
 	</head>
 
 <body>
-<div id="label-plat" class="form-area-wrapper mfp-hide">
-		<a class="popup-label-plat-dismiss" href="#"><img src="./template/img/icons/close.png" width="18" height="18" /></a>
-		<img src="./template/img/label.webp" loading="lazy" alt="label infocea" title="label infocea">
-	</div>
 		<div class="gdpr-bar" cookies-popup>
 			<div class="gdpr-bar-description">
 				<p class="gdpr-bar-p">En cliquant sur « Accepter tous les cookies », vous acceptez le stockage de cookies sur votre appareil<span class="bc-lines"></span> pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de marketing.</p>
@@ -110,7 +106,7 @@
 													</div>
 						<div class="gdpr-preferences-popup-content-footer">
 							<button type="submit" class="submit-btn">Sauvegarder</button>
-							<a href="./Protection-des-donnees-personnelles.html" class="text-color-default bottom-txt-link">Protection des données personnelles</a>
+							<a href="./Protection-des-donnees-personnelles.php" class="text-color-default bottom-txt-link">Protection des données personnelles</a>
 						</div>
 				</form>
 			</div>
@@ -141,7 +137,7 @@
 		<div class="container nav-container">
 			<div class="responsive-mobile-menu">
 				<div class="logo-wrapper" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-					<a title="ASSUR'ECO" href="./index.html" itemprop="name" class="logo">
+					<a title="ASSUR'ECO" href="./index.php" itemprop="name" class="logo">
 						<img class="logo-assureco" src="./template/img/logo.png" alt="ASSUR'ECO Assurance" width="205" height="70" />
 					</a>
 				</div>
@@ -150,30 +146,24 @@
 						</button>
 
 						<div class="label-plat-mob">
-						<a href="#" class="label_plat popup">
-						<img src="./template/img/icons/label_icon.webp" alt="Label platinum décerné à infocea" title="Label platinum décerné à infocea" width="98" height="82" />
-					    </a>
 						</div>
 								</div>
 									<div class="collapse navbar-collapse" id="main_menu">
 						<ul class="navbar-nav">
 						    <li class="">
-							<a href="./rappel-gratuit.html">Rappel gratuit</a>
+							<a href="./rappel-gratuit.php">Rappel gratuit</a>
 							</li>
 							<li>
 																											<span class="dem_devis" data-toggle="collapse">Demande de devis</span>
 																								</li>
 							
 							<li>
-								<a href="./assurance-auto-temporaire-souscription-en-ligne.html">Assurance auto temporaire souscription en ligne</a>
+								<a href="./assurance-auto-temporaire-souscription-en-ligne.php">Assurance auto temporaire souscription en ligne</a>
 							</li>
 						</ul>
 					</div>
 
 					<div class="nav-right-content">
-					    <a href="#" class="label_plat popup">
-							<img src="./template/img/icons/label_icon.webp" alt="Label platinum décerné à infocea" title="Label platinum décerné à infocea" width="98" height="82">
-						</a>
 					</div>
 
 						</div>
@@ -188,10 +178,10 @@
                             <a class="boxed-btn active" href="#">Demande de devis</a>
                         </li>
                         <li class="button-f">
-                            <a class="boxed-btn" href="./rappel-gratuit.html">Rappel gratuit</a>
+                            <a class="boxed-btn" href="./rappel-gratuit.php">Rappel gratuit</a>
                         </li>
                         <li class="button-f">
-                            <a class="boxed-btn" href="./assurance-auto-temporaire-souscription-en-ligne.html">Assurance auto temporaire <br>souscription en ligne</a>
+                            <a class="boxed-btn" href="./assurance-auto-temporaire-souscription-en-ligne.php">Assurance auto temporaire <br>souscription en ligne</a>
                         </li>
                     </ul>
                 </div>
@@ -203,8 +193,8 @@
                         <div id="error-note-dem" class="alert alert-danger"></div>
                         <div id="success-note-dem" class="alert alert-success"></div>
                     </div>
-                    <form action="./actions/confirmation.html"
-                        class="asur-form sec-margin" method="GET">
+                    <form action="./actions/insert-demande.php"
+                        class="asur-form sec-margin" method="POST">
                         <input type="hidden" name="TypeForm" id="TypeForm" value="1" />
                         <div class="row">
                             <div class="col-lg-6">
@@ -346,7 +336,7 @@
                                         href="mailto:contact@assureco.fr">contact@assureco.fr</a>, ou par courrier à :
                                     ASSUR’ECO, 12 AV MAURICE THOREZ IVRY-SUR-SEINE. Pour plus de détail rendez-vous sur
                                     la page : <a class="bottom-txt-link"
-                                        href="./Protection-des-donnees-personnelles.html"
+                                        href="./Protection-des-donnees-personnelles.php"
                                         title="Protection des données personnelles">Protection des données
                                         personnelles</a>
                                 </p>
@@ -366,7 +356,7 @@
                     <div class="col">
                         <div class="card box-cus active mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                                <a href="./index.html">
+                                <a href="./index.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -383,7 +373,7 @@
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                            <a href="./sante.html">
+                            <a href="./sante.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -400,7 +390,7 @@
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                            <a href="./habitation.html">
+                            <a href="./habitation.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -417,7 +407,7 @@
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                            <a href="./pro.html">
+                            <a href="./pro.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -434,7 +424,7 @@
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                            <a href="./moto.html">
+                            <a href="./moto.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -451,7 +441,7 @@
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                                <a href="./prevoyance.html">
+                                <a href="./prevoyance.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -468,7 +458,7 @@
                     <div class="col">
                         <div class="card box-cus  mb-4 ml-auto mr-auto">
                             <div class="card-body py-0 px-2" style="min-height: 133px;">
-                            <a href="./assurance-auto-temporaire-souscription-en-ligne.html">
+                            <a href="./assurance-auto-temporaire-souscription-en-ligne.php">
                                 <div
                                     class="feature-box feature-box-primary text-center d-flex flex-column align-items-center mb-2">
                                     <div class="feature-box-icon border-radius-2 mb-0 w-auto h-auto pt-2 pb-0 text-5">
@@ -609,14 +599,14 @@
                     <div class="footer-widget nav_menus_widget">
                                                 <h4 class="widget-title">NOS SOLUTIONS D’ASSURANCE AUTO</h4>
                                                 <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                            <li itemprop="name"><a title="Assurance auto alcoolémie" href="./auto-alcoolemie.html" itemprop="url">Assurance auto alcoolémie</a></li><li itemprop="name"><a title="Assurance auto classique" href="./auto-classique.html" itemprop="url">Assurance auto classique</a></li><li itemprop="name"><a title="Assurance auto fausse déclaration" href="./auto-fausse-declaration.html" itemprop="url">Assurance auto fausse déclaration</a></li><li itemprop="name"><a title="Assurance auto malus" href="./auto-malus.html" itemprop="url">Assurance auto malus</a></li><li itemprop="name"><a title="Assurance auto non-paiement" href="./auto-non-paiement.html" itemprop="url">Assurance auto non-paiement</a></li><li itemprop="name"><a title="Assurance auto résilié" href="./auto-resilie.html" itemprop="url">Assurance auto résilié</a></li><li itemprop="name"><a title="Assurance auto retrait de permis" href="./auto-retrait-de-permis.html" itemprop="url">Assurance auto retrait de permis</a></li><li itemprop="name"><a title="Assurance auto sinistres" href="./auto-sinistres.html" itemprop="url">Assurance auto sinistres</a></li><li itemprop="name"><a title="Assurance auto temporaire" href="./assurance-auto-temporaire-souscription-en-ligne.html" itemprop="url">Assurance auto temporaire</a></li><li itemprop="name"><a title="Assurance voiture de collection" href="./voiture-collection.html" itemprop="url">Assurance voiture de collection</a></li><li itemprop="name"><a title="Assurance voiture sans permis" href="./vsp.html" itemprop="url">Assurance voiture sans permis</a></li>                        </ul>
+                            <li itemprop="name"><a title="Assurance auto alcoolémie" href="./auto-alcoolemie.php" itemprop="url">Assurance auto alcoolémie</a></li><li itemprop="name"><a title="Assurance auto classique" href="./auto-classique.php" itemprop="url">Assurance auto classique</a></li><li itemprop="name"><a title="Assurance auto fausse déclaration" href="./auto-fausse-declaration.php" itemprop="url">Assurance auto fausse déclaration</a></li><li itemprop="name"><a title="Assurance auto malus" href="./auto-malus.php" itemprop="url">Assurance auto malus</a></li><li itemprop="name"><a title="Assurance auto non-paiement" href="./auto-non-paiement.php" itemprop="url">Assurance auto non-paiement</a></li><li itemprop="name"><a title="Assurance auto résilié" href="./auto-resilie.php" itemprop="url">Assurance auto résilié</a></li><li itemprop="name"><a title="Assurance auto retrait de permis" href="./auto-retrait-de-permis.php" itemprop="url">Assurance auto retrait de permis</a></li><li itemprop="name"><a title="Assurance auto sinistres" href="./auto-sinistres.php" itemprop="url">Assurance auto sinistres</a></li><li itemprop="name"><a title="Assurance auto temporaire" href="./assurance-auto-temporaire-souscription-en-ligne.php" itemprop="url">Assurance auto temporaire</a></li><li itemprop="name"><a title="Assurance voiture de collection" href="./voiture-collection.php" itemprop="url">Assurance voiture de collection</a></li><li itemprop="name"><a title="Assurance voiture sans permis" href="./vsp.php" itemprop="url">Assurance voiture sans permis</a></li>                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget nav_menus_widget">
                                                 <h4 class="widget-title">NOS SOLUTIONS D’ASSURANCE</h4>
                                                 <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                            <li itemprop="name"><a title="Assurance habitation" href="./habitation.html" itemprop="url">Assurance habitation</a></li><li itemprop="name"><a title="Assurance moto" href="./moto.html" itemprop="url">Assurance moto</a></li><li itemprop="name"><a title="Assurance prévoyance" href="./prevoyance.html" itemprop="url">Assurance prévoyance</a></li><li itemprop="name"><a title="Assurance professionnelle" href="./pro.html" itemprop="url">Assurance professionnelle</a></li><li itemprop="name"><a title="Assurance santé" href="./sante.html" itemprop="url">Assurance santé</a></li>                        </ul>
+                            <li itemprop="name"><a title="Assurance habitation" href="./habitation.php" itemprop="url">Assurance habitation</a></li><li itemprop="name"><a title="Assurance moto" href="./moto.php" itemprop="url">Assurance moto</a></li><li itemprop="name"><a title="Assurance prévoyance" href="./prevoyance.php" itemprop="url">Assurance prévoyance</a></li><li itemprop="name"><a title="Assurance professionnelle" href="./pro.php" itemprop="url">Assurance professionnelle</a></li><li itemprop="name"><a title="Assurance santé" href="./sante.php" itemprop="url">Assurance santé</a></li>                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -659,13 +649,13 @@
                                         itemtype="http://www.schema.org/SiteNavigationElement">
                                         <li itemprop="name"><a title="protection des données personnelles"
                                                 itemprop="url"
-                                                href="./Protection-des-donnees-personnelles.html">PROTECTION
+                                                href="./Protection-des-donnees-personnelles.php">PROTECTION
                                                 DES DONNÉES PERSONNELLES</a></li>|
                                         <li itemprop="name"><a title="mentions légales" itemprop="url"
-                                                href="./mentionslegales.html">MENTIONS LÉGALES</a>
+                                                href="./mentionslegales.php">MENTIONS LÉGALES</a>
                                         </li>|
                                         <li itemprop="name"><a title="réclamations" itemprop="url"
-                                                href="./Reclamation.html">RÉCLAMATIONS</a></li>
+                                                href="./Reclamation.php">RÉCLAMATIONS</a></li>
                                     </ul>
                                 </div>
                             </div>
