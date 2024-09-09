@@ -35,6 +35,8 @@ input:not(:focus):valid ~ .floating-label {
   opacity: 1;
 }
 
+
+
 .form-temp .title {
   font-size: 30px;
   line-height: 50px;
@@ -484,6 +486,7 @@ body {
   margin: 0;
   color: #000000;
   overflow-x: hidden;
+  
 }
 h1 {
   font-size: 72px;
@@ -2189,6 +2192,13 @@ img.mfp-img {
   font-size: 19px;
   line-height: 20px;
   min-height: 40px;
+  word-break: unset;
+  word-wrap: unset;
+  overflow-wrap: unset;
+  -webkit-hyphens: unset;
+  -moz-hyphens: unset;
+  -ms-hyphens: unset;
+  hyphens: unset;
 }
 .box-cus-2 .feature-box-icon img {
   border-radius: 60px 60px 0px 0px;
@@ -2218,7 +2228,7 @@ img.mfp-img {
 }
 .button-f .boxed-btn.active {
   background: #fff !important;
-  color: #1aa581;
+  color: #04C4B0;
 }
 .button-f .boxed-btn:hover {
   background: #323232 !important;
